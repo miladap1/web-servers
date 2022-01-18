@@ -20,7 +20,7 @@ const forecast = (latitude, longitude, callback) => {
           body.current.temperature +
           " degress out. There is a " +
           body.current.observation_time +
-          "% chance of rain."
+          "% chance of rainy."
       );
     }
   });
