@@ -9,7 +9,7 @@ message2.textContent = "";
 wether.addEventListener("submit", (e) => {
   const location = search.value;
   e.preventDefault();
-  fetch(`http://127.0.0.1:3000/weather?address=${location}`).then((e) => {
+  fetch(`/weather?address=${location}`).then((e) => {
     e.json().then((s) => {
       if (s.error) {
         console.log(s.error);
